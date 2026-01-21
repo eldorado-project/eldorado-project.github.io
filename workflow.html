@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Gold Mine Investment Milestones</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #1a1a1a;
+    margin: 0;
+    padding: 40px;
+}
+h1 { text-align: center; color: #D4AF37; margin-bottom: 20px; }
+h2 { margin-bottom: 10px; }
+.timeline { max-width: 900px; margin: auto; }
+.milestone {
+    background: #ffffff;
+    border-left: 5px solid #d4af27;
+    padding: 24px 28px;
+    margin-bottom: 25px;
+    border-radius: 16px;
+    position: relative;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: transform 0.3s;
+}
+.milestone:hover { transform: translateY(-3px); }
+.milestone::before {
+    content: "";
+    width: 14px;
+    height: 14px;
+    background: #d4af27;
+    border-radius: 50%;
+    position: absolute;
+    left: -10px;
+    top: 24px;
+    transition: background 0.3s;
+}
+.milestone:hover::before { background: #4caf50; }
+.percentage { font-weight: bold; color: #D4AF37; margin-bottom: 10px; }
+.description { font-size: 14px; line-height: 1.6; margin-bottom: 10px; }
+.protection {
+    background: #f5f7f9;
+    padding: 14px 18px;
+    border-radius: 12px;
+    font-size: 13px;
+    border-left: 3px solid #4caf50;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+}
+.risk {
+    background: #fff4e5;
+    padding: 12px 15px;
+    border-radius: 12px;
+    font-size: 13px;
+    border-left: 3px solid #ff9800;
+    margin-top: 10px;
+    transition: background 0.3s, border-left-color 0.3s;
+}
+.milestone:hover .risk { background: #e6f9f0; border-left-color: #4caf50; }
+.progress-container {
+    background: #e0e0e0;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-top: 8px;
+    height: 12px;
+}
+.progress-bar {
+    height: 100%;
+    background: #D4AF37;
+    border-radius: 12px;
+    width: 0;
+    transition: width 0.6s ease;
+}
+ul { margin: 5px 0 5px 18px; }
+/* Bonus chart styles */
+.bonus-chart-container { max-width: 900px; margin: 0 auto 40px auto; }
+.bonus-chart-bar {
+    background: #e0e0e0;
+    border-radius: 12px;
+    overflow: hidden;
+    height: 24px;
+    display: flex;
+}
+.bonus-segment { height: 100%; }
+/* Calculator styles */
+.calculator {
+    max-width:900px;
+    margin:40px auto;
+    padding:20px;
+    border:2px solid #d4af27;
+    border-radius:16px;
+    background:#f9f9f9;
+}
+.footer { text-align: center; margin-top: 40px; font-size: 12px; color: #666; }
+</style>
+</head>
+<body>
+
+<h1>Open-Pit Gold Mine Investment Milestones</h1>
+
+
+<div class="bonus-chart-container">
+    <h2 style="color:#D4AF37; text-align:center;">Risk Investment Bonus Distribution (of Distributed Production)</h2>
+    <div class="bonus-chart-bar">
+        <div class="bonus-segment" style="width:35%; background:#f39c12;" title="Licensing & Permitting: 7%"></div>
+        <div class="bonus-segment" style="width:25%; background:#f1c40f;" title="Geological Testing: 5%"></div>
+        <div class="bonus-segment" style="width:15%; background:#f7dc6f;" title="Proof of Reserves: 3%"></div>
+        <div class="bonus-segment" style="width:5%; background:#f1c40f;" title="Infrastructure & Processing: 1%"></div>
+        <div class="bonus-segment" style="width:0%; background:#f39c12;" title="Processing Refinery: 0%"></div>
+        <div class="bonus-segment" style="width:0%; background:#ddd;" title="Production: 0%"></div>
+    </div>
+    <p style="text-align:center; font-size:13px; margin-top:8px;">Total Risk Investment Bonus = 16% of Distributed Production</p>
+</div>
+
+<!-- Milestones -->
+<div class="timeline">
+
+    <div class="milestone">
+        <h2>1. Licensing & Permitting</h2>
+        <div class="percentage">Capital Allocation: 2% – 5%</div>
+        <div class="description">
+            Securing mining licenses, land rights, environmental approvals, and regulatory compliance.
+        </div>
+        <div class="protection">
+            Investor Protection: Legal due diligence, license verification, and restricted capital release until permits are fully validated.
+        </div>
+        <div class="risk">
+            Risk Level: Very High <br>
+            Risk Investment Bonus: 7%
+        </div>
+        <div class="progress-container">
+            <div class="progress-bar" style="width: 7%;"></div>
+        </div>
+    </div>
+
+    <div class="milestone">
+        <h2>2. Geological Testing & Resource Evaluation</h2>
+        <div class="percentage">Capital Allocation: 8% – 12%</div>
+        <div class="description">
+            Drilling, sampling, geological modeling, and resource estimation under international standards.
+        </div>
+        <div class="protection">
+            Investor Protection: Independent geological audits, JORC / NI 43-101 reporting, and milestone-based funding tranches.
+        </div>
+        <div class="risk">
+            Risk Level: High <br>
+            Risk Investment Bonus: 5%
+        </div>
+        <div class="progress-container">
+            <div class="progress-bar" style="width: 5%;"></div>
+        </div>
+    </div>
+
+    <div class="milestone">
+        <h2>3. Proof of Reserves & Feasibility</h2>
+        <div class="percentage">Capital Allocation: 5% – 8%</div>
+        <div class="description">
+            Conversion of resources into proven and probable reserves through feasibility studies and economic modeling.
+        </div>
+        <div class="protection">
+            Investor Protection: Third-party feasibility validation, conservative assumptions, and investment approval gates.
+        </div>
+        <div class="risk">
+            Risk Level: Medium <br>
+            Risk Investment Bonus: 3%
+        </div>
+        <div class="progress-container">
+            <div class="progress-bar" style="width: 3%;"></div>
+        </div>
+    </div>
+
+    <div class="milestone">
+        <h2>4. Mining Infrastructure Development</h2>
+        <div class="percentage">Capital Allocation: 40% – 50%</div>
+        <div class="description">
+            Core capital deployment phase: site prep, haul roads, fleet acquisition, power & water supply, workshops, and tailings systems.
+            <ul>
+                <li>Mine Site Preparation</li>
+                <li>Mining Fleet & Equipment</li>
+                <li>Power Infrastructure</li>
+                <li>Water Management Systems</li>
+                <li>Support Facilities</li>
+                <li>Environmental & Safety Systems</li>
+            </ul>
+        </div>
+        <div class="protection">
+            Investor Protection: Escrow-controlled payments, EPC contracts, insurance coverage, independent inspections.
+        </div>
+        <div class="risk">
+            Risk Level: Medium-Low <br>
+            Risk Investment Bonus: 1%
+        </div>
+        <div class="progress-container">
+            <div class="progress-bar" style="width: 1%;"></div>
+        </div>
+    </div>
+
+    <div class="milestone">
+        <h2>5. Processing Plant & Refinery Integration</h2>
+        <div class="percentage">Capital Allocation: 20% – 25%</div>
+        <div class="description">
+            Installation of crushing, milling, recovery systems, and refinery or dore production facilities.
+        </div>
+        <div class="protection">
+            Investor Protection: Independent metallurgical testing, assay reconciliation, and transparent refining contracts.
+        </div>
+        <div class="risk">
+            Risk Level: Low <br>
+            Risk Investment Bonus: 0%
+        </div>
+        <div class="progress-container">
+            <div class="progress-bar" style="width: 0%;"></div>
+        </div>
+    </div>
+
+    <div class="milestone">
+        <h2>6. Gold Production & Operational Scaling</h2>
+        <div class="percentage">Capital Allocation: 5% – 10%</div>
+        <div class="description">
+            Commercial production, cost optimization, and scaling of gold output.
+        </div>
+        <div class="protection">
+            Investor Protection: Audited production reports, segregated revenue accounts, and continuous compliance monitoring.
+        </div>
+        <div class="risk">
+            Risk Level: Minimal <br>
+            Risk Investment Bonus: 0%
+        </div>
+        <div class="progress-container">
+            <div class="progress-bar" style="width: 0%;"></div>
+        </div>
+    </div>
+
+</div>
+
+<div class="footer">
+    © Gold Mining Investment Framework – Risk Investment Bonus of Distributed Production
+</div>
+
+<script>
+// Animate milestone progress bars
+window.addEventListener('DOMContentLoaded', () => {
+    const bars = document.querySelectorAll('.progress-bar');
+    bars.forEach(bar => {
+        const width = bar.style.width;
+        bar.style.width = '0';
+        setTimeout(() => { bar.style.width = width; }, 100);
+    });
+});
+
+</script>
+
+</body>
+</html>
