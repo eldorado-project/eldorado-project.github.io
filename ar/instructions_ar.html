@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>وثيقة شروط الاشتراك والاستثمار</title>
+    <!-- تحميل خط Cairo -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="../assets/css/main.css" rel="stylesheet">
+    <link href="../assets/css/main_rtl.css" rel="stylesheet">
+	  <!-- Favicons -->
+  <link href="../assets/img/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <style>
+        /* إجبار كل العناصر داخل container على استخدام Cairo */
+        .container, .container * {
+            font-family: 'Cairo', sans-serif !important;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #FAF9F6;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+/* زر فتح الحساب العائم على اليمين */
+.open-account-btn {
+    position: fixed;       /* يبقى ثابت أثناء التمرير */
+    bottom: 20px;          /* مسافة من أسفل الصفحة */
+    right: 20px;           /* على جهة اليمين */
+    z-index: 9999;         /* فوق كل العناصر */
+    background-color: #D4AF37;
+    color: #fff;
+    padding: 12px 25px;    /* حجم الزر */
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    width: auto;           /* مهم: لا يأخذ عرض الشاشة بالكامل */
+    display: inline-block;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+/* تأثير عند المرور بالفأرة */
+.open-account-btn:hover {
+    background-color: #b8952d;
+    transform: scale(1.05);
+}
+
+
+
+        /* Steps Indicator */
+        .steps {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .step {
+            position: relative;
+            background: #FAF9F6;
+            padding: 0 10px;
+            text-align: center;
+            z-index: 1;
+        }
+
+        .step:not(:first-child)::before {
+            content: "";
+            position: absolute;
+            top: 18px;
+            inset-inline-start: -50%; /* يدعم RTL/LTR تلقائي */
+            inline-size: 100%;
+            block-size: 2px;
+            background-color: #ccc;
+            z-index: -1;
+        }
+
+        .step-number {
+            width: 36px;
+            height: 36px;
+            background-color: #ccc;
+            color: #fff;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 6px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .step.active .step-number {
+            background-color: #D4AF37; /* ذهبي */
+        }
+
+        .step-title {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        ul {
+            padding-right: 20px;
+        }
+
+        .certificate {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .certificate img {
+            max-width: 100%;
+            border: 2px dashed #999;
+            padding: 10px;
+            border-radius: 6px;
+            background-color: #fafafa;
+        }
+
+        .note {
+            font-size: 14px;
+            color: #666;
+            margin-top: 10px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <h1>وثيقة تنظيمية لشروط الاشتراك والاستثمار</h1>
+
+    <!-- زر فتح حساب -->
+
+    <a href="register_ar.html" class="open-account-btn">فتح حساب جديد</a>
+
+
+    <!-- Steps Indicator -->
+    <div class="steps">
+        <div class="step" id="step1">
+            <div class="step-number">1</div>
+            <div class="step-title">إنشاء الحساب</div>
+        </div>
+        <div class="step" id="step2">
+            <div class="step-number">2</div>
+            <div class="step-title">تفعيل الحساب</div>
+        </div>
+        <div class="step" id="step3">
+            <div class="step-number">3</div>
+            <div class="step-title">الاستثمار</div>
+        </div>
+        <div class="step" id="step4">
+            <div class="step-number">4</div>
+            <div class="step-title">الشهادة</div>
+        </div>
+    </div>
+
+    <!-- Section 1 -->
+    <div class="section">
+        <h2>المادة (1): إنشاء الحساب</h2>
+        <p>يقوم المستثمر بإنشاء حساب جديد على المنصة من خلال إدخال البيانات التالية:</p>
+        <ul>
+            <li>الاسم الأول</li>
+            <li>اللقب</li>
+            <li>تاريخ الولادة</li>
+            <li>البلد</li>
+            <li>وثيقة رسمية معتمدة (هوية شخصية أو جواز سفر)</li>
+            <li>كلمة المرور</li>
+        </ul>
+        <p>يتم إرسال رسالة تأكيد إلى البريد الإلكتروني المسجّل، ويُعد تأكيد البريد شرطاً أساسياً لإكمال التسجيل.</p>
+    </div>
+
+    <!-- Section 2 -->
+    <div class="section">
+        <h2>المادة (2): تفعيل الحساب</h2>
+        <ul>
+            <li>بعد تأكيد البريد الإلكتروني، يمكن للمستثمر تسجيل الدخول إلى حسابه.</li>
+            <li>يتم إنشاء رقم محفظة خاص بالمستثمر ورقم محفظة مخصص للاشتراكات.</li>
+            <li>يبقى الحساب غير مفعل إلى حين إرسال مبلغ الاشتراك.</li>
+            <li>يتم تفعيل الحساب خلال مدة تتراوح بين 48 و72 ساعة من تاريخ استلام الاشتراك.</li>
+        </ul>
+    </div>
+
+    <!-- Section 3 -->
+    <div class="section">
+        <h2>المادة (3): اختيار المشروع والاستثمار</h2>
+        <ul>
+            <li>يختار المستثمر المشروع الاستثماري من المشاريع المتاحة.</li>
+            <li>يتم إيداع مبلغ الاستثمار في محفظة المشروع المختار.</li>
+            <li>يُعد مبلغ الاستثمار قابلاً للاسترداد وفق الشروط المعتمدة لكل مشروع.</li>
+        </ul>
+    </div>
+
+    <!-- Section 4 -->
+    <div class="section">
+        <h2>المادة (4): شهادة ووثيقة الاستثمار</h2>
+        <ul>
+            <li>يحصل المستثمر بعد إتمام عملية الاستثمار على شهادة استثمار رسمية.</li>
+            <li>يتم إصدار وثيقة استثمار رقمية مرتبطة بالمستثمر والمشروع الاستثماري.</li>
+            <li>تتضمن الشهادة والوثيقة الرقمية رمز استثمار فريد.</li>
+            <li>تُرسل الشهادة والوثيقة الرقمية إلى بلد المستثمر وفق الآلية المعتمدة.</li>
+            <li>تُعد الشهادة والوثيقة الرقمية مستندات رسمية لإثبات حقوق المستثمر.</li>
+        </ul>
+    </div>
+
+    <!-- Certificate Image -->
+	
+    <div class="certificate">
+        <h2>نموذج شهادة الاستثمار</h2>
+        <img src="../assets/img/certificate.png" alt="نموذج شهادة الاستثمار">
+        <div class="note">
+            * الصورة أعلاه تمثل نموذجاً إرشادياً لشهادة ووثيقة الاستثمار الرقمية.
+        </div>
+    </div>
+  
+</div>
+
+<script>
+    // مثال: تحديد المرحلة النشطة
+    let activeStep = 1; // يمكن تغييره حسب حالة المستخدم: 1،2،3،4
+    for (let i = 1; i <= activeStep; i++) {
+        document.getElementById('step'+i).classList.add('active');
+    }
+</script>
+
+</body>
+</html>
