@@ -1,0 +1,65 @@
+/* الخط العربي Cairo للصفحة بالكامل */
+html, body, * {
+  font-family: 'Cairo', sans-serif !important;
+}
+
+/* اتجاه الصفحة العام */
+body {
+  direction: rtl;
+  text-align: right;
+  line-height: 1.8;
+  letter-spacing: 0;
+}
+
+/* قوائم التنقل */
+.navbar ul {
+  padding-right: 0;
+   display: flex;
+  gap: 25px; /* المسافة بين العناصر بطريقة أبسط */
+  justify-content: flex-end; /* وضع العناصر على اليمين في RTL */
+  padding-right: 0; /* إزالة البادينغ الافتراضي */
+}
+
+/* العناوين والفقرات */
+.hero h2,
+.hero p {
+  text-align: right;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+p, li, a {
+  font-weight: 400;
+}
+
+/* صناديق الأيقونات */
+.icon-box {
+  text-align: center;
+}
+
+/* الفوتر */
+.footer {
+  direction: rtl;
+}
+
+
+/* إجبار كل أيقونات القوائم على inline-block */
+ul li i.bi-check-circle-fill {
+  display: inline-block !important; /* <- إجبارية لتجاوز أي CSS آخر */
+  position: relative !important;    /* بدل absolute لتجنب السطر الجديد */
+  margin-right: 8px;                /* مسافة بين الأيقونة والنص */
+  color: #D4AF37;
+  font-size: 1rem;
+  top: 0;                            /* محاذاة رأسية مع النص */
+}
+
+/* إزالة أي padding أو margin اضافي يسبب فراغ */
+ul li {
+  list-style: none !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  text-align: right;
+  line-height: 1.6;
+}
